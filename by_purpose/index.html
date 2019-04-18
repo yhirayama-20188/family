@@ -1,0 +1,628 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <title>やりたいことから選ぶ</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-M6QKN2');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta name="description" content="下層ページのディスクリプション" >
+  <meta name="keywords" content="">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="やりたいことから選ぶ" />
+  <meta property="og:type" content="company" />
+  <meta property="og:url" content="https://www.his-j.com/theme/family/purpose/" />
+  <meta property="og:site_name" content="H.I.S. | 海外旅行・格安航空券の総合情報サイト" />
+  <meta property="og:image" content="https://www.his-j.com/theme/family/img/plan_photo02.jpg" />
+  <meta property="og:description" content="下層ページのディスクリプション" />
+  <!-- OpenGraph -->
+
+  <!-- 共通 -->
+  <script src="https://www.his-j.com/cmn/plugin/jquery/jquery-3.3.1.min.js"></script>
+  <script src="https://www.his-j.com/cmn/plugin/cookie_js/jquery.cookie.js"></script>
+  <script src="https://www.his-j.com/cmn/headfoot/js/headfoot_login.js"></script>
+  <link rel="stylesheet" href="https://www.his-j.com/cmn/css/common.css">
+  <script src="https://www.his-j.com/cmn/plugin/vue/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.17.1/dist/axios.min.js"></script>
+
+  <!-- pc header/footer -->
+  <script src="https://www.his-j.com/cmn/headfoot/js/headfoot_pc.js" media="screen and (min-width: 1025px)"></script>
+  <link rel="stylesheet" href="https://www.his-j.com/cmn/headfoot/css/headfoot_pc.css" media="screen and (min-width: 1025px)">
+
+  <!-- sp・tablet header/footer -->
+  <script src="https://www.his-j.com/cmn/headfoot/js/headfoot_sp.js" media="screen and (max-width: 1024px)"></script>
+  <link rel="stylesheet" href="https://www.his-j.com/cmn/headfoot/css/headfoot_sp.css" media="screen and (max-width: 1024px)">
+
+  <!-- ファミリー共通 css -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&amp;subset=japanese" rel="stylesheet">
+  <link rel="stylesheet" href="../css/magnific-popup.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- sp・tablet商品カード スライダー -->
+  <link rel="stylesheet" href="//www.his-j.com/cmn/plugin/slick/slick.css" media="screen and (max-width: 1024px)">
+  <script src="//www.his-j.com/cmn/plugin/slick/slick.min.js" media="screen and (max-width: 1024px)"></script>
+
+  <!--（IE対策）-->
+  <!-- object-fit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
+  <!-- polyfill `es6-promise-auto` -->
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+  <!--上限下限取得-->
+  <!-- <script type="text/javascript" src="https://e.his-j.com/js/ciao/common/minmax/ciao_minmax.js" charset="Shift_JIS"></script> -->
+  <script type="text/javascript" src="https://e.his-j.com/js/ciao/common/minmax/dat/02A/tyo_family.js" charset="Shift_JIS"></script>
+  <!--上限下限取得-->
+  
+  <link rel="stylesheet" href="../css/lower.css">
+    
+    <link rel="stylesheet" href="../css/by_purpose.css">
+    
+  
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6QKN2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+<!-- pc -->
+<script src="https://www.his-j.com/cmn/headfoot/js/switch_header_pc.js"></script>
+<!-- sp -->
+<script src="https://www.his-j.com/cmn/headfoot/js/switch_header_sp.js"></script>
+
+  <main class="product_app">
+    <section class="section--top">
+      <div class="navFamily">
+  <div class="section__inner">
+    <div class="logo--family">
+      <a href="/">
+      <img src="../img/common/logo_family.svg" class="pc" alt="H.I.S FAMILY PLAN H.I.Sファミリープラン">
+      </a>
+    </div>
+    <ul class="navFamily__list">
+      <li>
+        <a href="../by_purpose/">
+          <img src="../img/common/nav_purpose.svg"
+            srcset="../img/common/nav_purpose_sp.svg 767w,
+                    ../img/common/nav_purpose.svg" 
+            alt="やりたいことで選ぶ Purpose">
+        </a>
+      </li>
+      <li>
+        <a href="../baby_kids/">
+          <img src="../img/common/nav_kids.svg"
+            srcset="../img/common/nav_kids_sp.svg 767w,
+                    ../img/common/nav_kids.svg" 
+            alt="ベビー＆キッズ Baby & Kids">
+        </a>
+      </li>
+      <li>
+        <a href="../family_structure/">
+          <img src="../img/common/nav_family.svg"
+            srcset="../img/common/nav_family_sp.svg 767w,
+                    ../img/common/nav_family.svg" 
+            alt="家族構成で選ぶ Family Structure">
+        </a>
+      </li>
+      <li class="upper">
+        <span>
+          <img src="../img/common/nav_destination.svg"
+            srcset="../img/common/nav_destination_sp.svg 767w,
+                    ../img/common/nav_destination.svg" 
+            alt="行先で選ぶ Destination">
+        </span>
+        <div class="lower">
+          <div class="lower__link">
+            <a href="../kaigai/">海外旅行に行く</a>
+            <a href="../kokunai/">国内旅行に行く</a>            
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="">
+          <img src="../img/common/nav_suggest.svg"
+            srcset="../img/common/nav_suggest_sp.svg 767w,
+                    ../img/common/nav_suggest.svg" 
+            alt="旅先診断 Diagnostic">
+        </a>
+      </li>
+      <li>
+        <a href="../advice/">
+          <img src="../img/common/nav_info.svg"
+            srcset="../img/common/nav_info_sp.svg 767w,
+                    ../img/common/nav_info.svg" 
+            alt="お役立ち情報 Helpful">
+        </a>
+      </li>
+    </ul>    
+  </div>
+</div>
+      <div class="mvFamily section__inner">
+        <h1 class="mv__title"><img src="../img/by_purpose/mv_title.svg" alt="やりたいことで選ぶ"></h1>
+        <div class="mv__icon"><img src="../img/by_purpose/mv_icon.svg" alt="アイコン"></div>
+      </div>
+    </section>
+
+    <section class="section__anchorLink section__inner">
+      <ul>
+        <li class="skyblue"><a href="#activity">アクティビティを<span>やってみたい！</span></a></li>
+        <li class="red"><a href="#season">季節ならではの<span>思い出をつくる！</span></a></li>
+        <li class="green"><a href="#themepark">テーマパークに<span>行きたい！</span></a></li>
+        <li class="orange"><a href="#culture">世界の文化に<span>ふれたい！</span></a></li>
+        <li class="deepblue"><a href="#animal">動物と<span>ふれあいたい！</span></a></li>
+      </ul>
+    </section>
+
+    <section id="activity" class="section__wrap section__wrap--activity">
+      <div class="section__wrap__bg section__inner">
+        <div class="purpose__wrap">
+          <div class="purpose__wrap__text">
+            <h2 class="purpose__title">
+              <div class="purpose__title--sub"><img src="../img/by_purpose/activity_subtitle.svg" alt="大自然を体で感じる！"></div>
+              <div class="purpose__title--main"><img src="../img/by_purpose/activity_title.svg" alt="アクティビティをやってみたい！"></div>
+            </h2>
+            <div class="purpose__text">地平線まで広がる雄大な大地、真っ青な海、その中をかけめぐる動物たち・・・ 旅行の醍醐味といえば、なんと言っても普段は見られない景色や自然に出会えること。子供の頃に触れた大自然は、きっと大人になってもずっと心に残っていることでしょう。<br>※オプショナルツアーの参加には、別途オプショナルツアーのお申込みが必要です。</div>
+          </div>
+          <div class="purpose__wrap__mainImg"><img src="../img/by_purpose/activity_main.svg" alt=""></div>
+          <div class="purpose__wrap__subImg"><img src="../img/by_purpose/activity_sub.svg" alt=""></div>
+        </div>
+
+        <div v-for='purpose in purpose_product'>
+<ul class="product__card__wrap">
+    <li class="product__card" v-for='activity in purpose.activitys'>
+    <a v-bind:href="'https://tour.his-j.com/ct/detail.php?tour_code=' + activity.tour_code">
+        <div v-if="activity.catch" class="product__card__catch lightblue">{{activity.catch}}</div>
+        <div class="product__card__img"><img v-bind:src="activity.img" v-bind:alt="activity.catch"></div>
+        <div class="product__card__inner">
+        <div class="product__card__title">{{activity.title}}</div>
+        <div class="product__card__point">{{activity.point}}</div>
+        <div class="product__card__hotel">{{activity.hotel_name}}</div>
+        <div class="product__card__price"><span v-bind:id="activity.tour_code"></span></div>
+        <div v-if="activity.fuel" class="product__card__fuel">燃油サーチャージ込み</div>
+        <div v-else class="product__card__fuel">燃油サーチャージ無し</div>
+        <div v-if="activity.cxl_support" class="product__card__cxlSupport">キャンセルサポート付</div>
+        <div v-if="activity.pf" class="product__card__pf">パンフレット掲載「かぞくでかいがい」</div>
+        <div class="product__card__icon">
+            <div v-if="activity.type_of_travel == '海外旅行'" class="icon__typeOfTravel kaigaiTour">海外旅行</div>
+            <div v-if="activity.type_of_travel == '国内旅行'" class="icon__typeOfTravel kokunaiTour">国内旅行</div>
+            <div v-if="activity.target_age" class="icon__targetAge">推奨年齢：{{activity.target_age}}</div>
+        </div>
+        </div>
+    </a>
+    </li>
+</ul>
+</div>
+
+        <div class="purpose__op skyblue">
+          <div class="purpose__op__title"><img src="../img/by_purpose/op_title.svg" alt="現地での遊び方いろいろ おすすめオプショナルツアー"></div>
+          <table class="purpose__op__list">
+            <tr>
+              <th class="purpose__op__list__title">ハワイ</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！ああああああああああああ（3歳～）</a></td>
+            </tr>
+            <tr class="none">
+              <th class="purpose__op__list__title purpose__op__list__title--none"></th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+            <tr>
+              <th class="purpose__op__list__title">グアム</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+            <tr>
+              <th class="purpose__op__list__title">サイパン</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="season" class="section__wrap section__wrap--season">
+      <div class="section__wrap__bg section__inner">
+        <div class="purpose__wrap">
+          <div class="purpose__wrap__text">
+            <h2 class="purpose__title">
+              <div class="purpose__title--sub"><img src="../img/by_purpose/season_subtitle.svg" alt="夏！思い出づくりのチャンス！"></div>
+              <div class="purpose__title--main"><img src="../img/by_purpose/season_title.svg" alt="黄瀬宇ならではの思い出を作る！"></div>
+            </h2>
+            <div class="purpose__text">地平線まで広がる雄大な大地、真っ青な海、その中をかけめぐる動物たち・・・
+              旅行の醍醐味といえば、なんと言っても普段は見られない景色や自然に出会えること。子供の頃に触れた大自然は、きっと大人になってもずっと心に残っていることでしょう。<br>※オプショナルツアーの参加には、別途オプショナルツアーのお申込みが必要です。
+            </div>
+          </div>
+          <div class="purpose__wrap__mainImg"><img src="../img/by_purpose/season_main.png" alt=""></div>
+        </div>
+      
+        <div v-for='purpose in purpose_product'>
+<ul class="product__card__wrap">
+    <li class="product__card" v-for='season in purpose.seasons'>
+    <a v-bind:href="'https://tour.his-j.com/ct/detail.php?tour_code=' + season.tour_code">
+        <div v-if="season.catch" class="product__card__catch red">{{season.catch}}</div>
+        <div class="product__card__img"><img v-bind:src="season.img" v-bind:alt="season.catch"></div>
+        <div class="product__card__inner">
+        <div class="product__card__title">{{season.title}}</div>
+        <div class="product__card__point">{{season.point}}</div>
+        <div class="product__card__hotel">{{season.hotel_name}}</div>
+        <div class="product__card__price"><span>59,800円～219,000円</span></div>
+        <div v-if="season.fuel" class="product__card__fuel">燃油サーチャージ込み</div>
+        <div v-else class="product__card__fuel">燃油サーチャージ無し</div>
+        <div v-if="season.cxl_support" class="product__card__cxlSupport">キャンセルサポート付</div>
+        <div v-if="season.pf" class="product__card__pf">パンフレット掲載「かぞくでかいがい」</div>
+        <div class="product__card__icon">
+            <div v-if="season.type_of_travel == '海外旅行'" class="icon__typeOfTravel kaigaiTour">海外旅行</div>
+            <div v-if="season.type_of_travel == '国内旅行'" class="icon__typeOfTravel kokunaiTour">国内旅行</div>
+            <div v-if="season.target_age" class="icon__targetAge">推奨年齢：{{season.target_age}}</div>
+        </div>
+        </div>
+    </a>
+    </li>
+</ul>
+</div>
+
+        <div class="purpose__op red">
+          <div class="purpose__op__title"><img src="../img/by_purpose/op_title.svg" alt="現地での遊び方いろいろ おすすめオプショナルツアー"></div>
+          <table class="purpose__op__list">
+            <tr>
+              <th class="purpose__op__list__title">ハワイ</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！ああああああああああああ（3歳～）</a></td>
+            </tr>
+            <tr class="none">
+              <th class="purpose__op__list__title purpose__op__list__title--none"></th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+            <tr>
+              <th class="purpose__op__list__title">グアム</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+            <tr>
+              <th class="purpose__op__list__title">サイパン</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="themepark" class="section__wrap section__wrap--themepark">
+      <div class="section__wrap__bg section__inner">
+        <div class="purpose__wrap">
+          <div class="purpose__wrap__text">
+            <h2 class="purpose__title">
+              <div class="purpose__title--sub"><img src="../img/by_purpose/themepark_subtitle.png" alt=""></div>
+              <div class="purpose__title--main"><img src="../img/by_purpose/themepark_title.svg" alt="テーマパークに行きたい！"></div>
+            </h2>
+            <div class="purpose__text">地平線まで広がる雄大な大地、真っ青な海、その中をかけめぐる動物たち・・・
+              旅行の醍醐味といえば、なんと言っても普段は見られない景色や自然に出会えること。子供の頃に触れた大自然は、きっと大人になってもずっと心に残っていることでしょう。<br>※オプショナルツアーの参加には、別途オプショナルツアーのお申込みが必要です。
+            </div>
+          </div>
+          <div class="purpose__wrap__mainImg"><img src="../img/by_purpose/themepark_main.png" alt=""></div>
+          <div class="purpose__wrap__subImg"><img src="../img/by_purpose/themepark_sub.png" alt=""></div>
+        </div>
+      
+        <div v-for='purpose in purpose_product'>
+<ul class="product__card__wrap">
+    <li class="product__card" v-for='themepark in purpose.themeparks'>
+    <a v-bind:href="'https://tour.his-j.com/ct/detail.php?tour_code=' + themepark.tour_code">
+        <div v-if="themepark.catch" class="product__card__catch green">{{themepark.catch}}</div>
+        <div class="product__card__img"><img v-bind:src="themepark.img" v-bind:alt="themepark.catch"></div>
+        <div class="product__card__inner">
+        <div class="product__card__title">{{themepark.title}}</div>
+        <div class="product__card__point">{{themepark.point}}</div>
+        <div class="product__card__hotel">{{themepark.hotel_name}}</div>
+        <div class="product__card__price"><span>59,800円～219,000円</span></div>
+        <div v-if="themepark.fuel" class="product__card__fuel">燃油サーチャージ込み</div>
+        <div v-else class="product__card__fuel">燃油サーチャージ無し</div>
+        <div v-if="themepark.cxl_support" class="product__card__cxlSupport">キャンセルサポート付</div>
+        <div v-if="themepark.pf" class="product__card__pf">パンフレット掲載「かぞくでかいがい」</div>
+        <div class="product__card__icon">
+            <div v-if="themepark.type_of_travel == '海外旅行'" class="icon__typeOfTravel kaigaiTour">海外旅行</div>
+            <div v-if="themepark.type_of_travel == '国内旅行'" class="icon__typeOfTravel kokunaiTour">国内旅行</div>
+            <div v-if="themepark.target_age" class="icon__targetAge">推奨年齢：{{themepark.target_age}}</div>
+        </div>
+        </div>
+    </a>
+    </li>
+</ul>
+</div>
+
+        <div class="purpose__op green">
+          <div class="purpose__op__title"><img src="../img/by_purpose/op_title.svg" alt="現地での遊び方いろいろ おすすめオプショナルツアー"></div>
+          <table class="purpose__op__list">
+            <tr>
+              <th class="purpose__op__list__title">ハワイ</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！ああああああああああああ（3歳～）</a></td>
+            </tr>
+            <tr class="none">
+              <th class="purpose__op__list__title purpose__op__list__title--none"></th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+            <tr>
+              <th class="purpose__op__list__title">グアム</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+            <tr>
+              <th class="purpose__op__list__title">サイパン</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="culture" class="section__wrap section__wrap--culture">
+      <div class="section__wrap__bg section__inner">
+        <div class="purpose__wrap">
+          <div class="purpose__wrap__text">
+            <h2 class="purpose__title">
+              <div class="purpose__title--sub"><img src="../img/by_purpose/culture_subtitle.svg" alt="世界遺産や社寺はとってもCOOL!"></div>
+              <div class="purpose__title--main"><img src="../img/by_purpose/culture_title.svg" alt="世界の文化に触れたい！"></div>
+            </h2>
+            <div class="purpose__text">地平線まで広がる雄大な大地、真っ青な海、その中をかけめぐる動物たち・・・
+              旅行の醍醐味といえば、なんと言っても普段は見られない景色や自然に出会えること。子供の頃に触れた大自然は、きっと大人になってもずっと心に残っていることでしょう。<br>※オプショナルツアーの参加には、別途オプショナルツアーのお申込みが必要です。
+            </div>
+          </div>
+          <div class="purpose__wrap__mainImg"><img src="../img/by_purpose/culture_main.png" alt=""></div>
+          <div class="purpose__wrap__subImg"><img src="../img/by_purpose/culture_sub.png" alt="動物と触れたいたい！"></div>
+        </div>
+      
+        <div v-for='purpose in purpose_product'>
+<ul class="product__card__wrap">
+    <li class="product__card" v-for='culture in purpose.cultures'>
+    <a v-bind:href="'https://tour.his-j.com/ct/detail.php?tour_code=' + culture.tour_code">
+        <div v-if="culture.catch" class="product__card__catch orange">{{culture.catch}}</div>
+        <div class="product__card__img"><img v-bind:src="culture.img" v-bind:alt="culture.catch"></div>
+        <div class="product__card__inner">
+        <div class="product__card__title">{{culture.title}}</div>
+        <div class="product__card__point">{{culture.point}}</div>
+        <div class="product__card__hotel">{{culture.hotel_name}}</div>
+        <div class="product__card__price"><span>59,800円～219,000円</span></div>
+        <div v-if="culture.fuel" class="product__card__fuel">燃油サーチャージ込み</div>
+        <div v-else class="product__card__fuel">燃油サーチャージ無し</div>
+        <div v-if="culture.cxl_support" class="product__card__cxlSupport">キャンセルサポート付</div>
+        <div v-if="culture.pf" class="product__card__pf">パンフレット掲載「かぞくでかいがい」</div>
+        <div class="product__card__icon">
+            <div v-if="culture.type_of_travel == '海外旅行'" class="icon__typeOfTravel kaigaiTour">海外旅行</div>
+            <div v-if="culture.type_of_travel == '国内旅行'" class="icon__typeOfTravel kokunaiTour">国内旅行</div>
+            <div v-if="culture.target_age" class="icon__targetAge">推奨年齢：{{culture.target_age}}</div>
+        </div>
+        </div>
+    </a>
+    </li>
+</ul>
+</div>
+      
+        <div class="purpose__op orange">
+          <div class="purpose__op__title"><img src="../img/by_purpose/op_title.svg" alt="現地での遊び方いろいろ おすすめオプショナルツアー"></div>
+          <table class="purpose__op__list">
+            <tr>
+              <th class="purpose__op__list__title">ハワイ</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！ああああああああああああ（3歳～）</a></td>
+            </tr>
+            <tr class="none">
+              <th class="purpose__op__list__title purpose__op__list__title--none"></th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+            <tr>
+              <th class="purpose__op__list__title">グアム</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+            <tr>
+              <th class="purpose__op__list__title">サイパン</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="animal" class="section__wrap section__wrap--animal">
+      <div class="section__wrap__bg section__inner">
+        <div class="purpose__wrap">
+          <div class="purpose__wrap__text">
+            <h2 class="purpose__title">
+              <div class="purpose__title--sub"><img src="../img/by_purpose/animal_subtitle.svg" alt=""></div>
+              <div class="purpose__title--main"><img src="../img/by_purpose/animal_title.svg" alt=""></div>
+            </h2>
+            <div class="purpose__text">地平線まで広がる雄大な大地、真っ青な海、その中をかけめぐる動物たち・・・
+              旅行の醍醐味といえば、なんと言っても普段は見られない景色や自然に出会えること。子供の頃に触れた大自然は、きっと大人になってもずっと心に残っていることでしょう。<br>※オプショナルツアーの参加には、別途オプショナルツアーのお申込みが必要です。
+            </div>
+          </div>
+          <div class="purpose__wrap__mainImg"><img src="../img/by_purpose/animal_main.png" alt=""></div>
+          <div class="purpose__wrap__subImg"><img src="../img/by_purpose/animal_sub.png" alt=""></div>
+        </div>
+      
+        <!-- <div v-for='purpose in purpose_product'> -->
+          <div>
+<ul class="product__card__wrap">
+  
+    <!--#include virtual="/theme/family/product/by_purpose01.shtml" -->
+
+    <!-- <li class="product__card" v-for='animal in purpose.animals'>
+    <a v-bind:href="'https://tour.his-j.com/ct/detail.php?tour_code=' + animal.tour_code">
+        <div v-if="animal.catch" class="product__card__catch deepblue">{{animal.catch}}</div>
+        <div class="product__card__img"><img v-bind:src="animal.img" v-bind:alt="animal.catch"></div>
+        <div class="product__card__inner">
+        <div class="product__card__title">{{animal.title}}</div>
+        <div class="product__card__point">{{animal.point}}</div>
+        <div class="product__card__hotel">{{animal.hotel_name}}</div>
+        <div class="product__card__price"><span>59,800円～219,000円</span></div>
+        <div v-if="animal.fuel" class="product__card__fuel">燃油サーチャージ込み</div>
+        <div v-else class="product__card__fuel">燃油サーチャージ無し</div>
+        <div v-if="animal.cxl_support" class="product__card__cxlSupport">キャンセルサポート付</div>
+        <div v-if="animal.pf" class="product__card__pf">パンフレット掲載「かぞくでかいがい」</div>
+        <div class="product__card__icon">
+            <div v-if="animal.type_of_travel == '海外旅行'" class="icon__typeOfTravel kaigaiTour">海外旅行</div>
+            <div v-if="animal.type_of_travel == '国内旅行'" class="icon__typeOfTravel kokunaiTour">国内旅行</div>
+            <div v-if="animal.target_age" class="icon__targetAge">推奨年齢：{{animal.target_age}}</div>
+        </div>
+        </div>
+    </a>
+    </li> -->
+</ul>
+</div>
+      
+        <div class="purpose__op deepblue">
+          <div class="purpose__op__title"><img src="../img/by_purpose/op_title.svg" alt="現地での遊び方いろいろ おすすめオプショナルツアー"></div>
+          <table class="purpose__op__list">
+            <tr>
+              <th class="purpose__op__list__title">ハワイ</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！ああああああああああああ（3歳～）</a></td>
+            </tr>
+            <tr class="none">
+              <th class="purpose__op__list__title purpose__op__list__title--none"></th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+            <tr>
+              <th class="purpose__op__list__title">グアム</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+            <tr>
+              <th class="purpose__op__list__title">サイパン</th>
+              <td class="purpose__op__list__text"><a href="">・マリンスポーツで海を楽しもう！（3歳～）</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id="lowerNav">
+    <div class="section__inner other">
+        <div class="lowerNav_title">その他の選び方をする</div>
+        <ul class="lowerNav__list">
+            <li><a href="../baby_kids/"><img src="../img/common/lower_nav_baby_kids.png"></a></li>
+            <li><a href="../family_structure/"><img src="../img/common/lower_nav_family_structure.png"></a></li>
+            <li><a href="../kaigai/"><img src="../img/common/lower_nav_kaigai.png"></a></li>
+            <li><a href="../kokunai/"><img src="../img/common/lower_nav__kokunai.png"></a></li>
+        </ul>
+    </div>
+    <div class="section__inner useful">
+        <div class="lowerNav_title">お役立ち情報</div>
+        <ul class="lowerNav__list">
+            <li>
+                <div class="lowerNav__list__subTitle">小さい子供を連れて<br>家族旅行を計画する際の</div>
+                <div class="lowerNav__list__mainTitle">ワンポイント<br>アドバイス</div>
+                <div class="lowerNav__list__img"><img src="../img/common/lower_nav_advice.png"></div>
+                <div class="lowerNav__list__btn"><a href="../advice/"><img src="../img/common/lower_nav_check.svg" alt="check"></a></div>
+            </li>
+            <li>
+                <div class="lowerNav__list__subTitle">旅行前の計画段階から<br>出発直前の準備まで</div>
+                <div class="lowerNav__list__mainTitle">よくある<br>悩み・ご質問</div>
+                <div class="lowerNav__list__img"><img src="../img/common/lower_nav_faq.png"></div>
+                <div class="lowerNav__list__btn"><a href="../faq/"><img src="../img/common/lower_nav_check.svg" alt="check"></a></div>
+            </li>
+            <li>
+                <div class="lowerNav__list__subTitle">これさえあれば大丈夫！<br>快適な旅行にするための</div>
+                <div class="lowerNav__list__mainTitle">持ち物<br>チェックリスト</div>
+                <div class="lowerNav__list__img"><img src="../img/common/lower_nav_belongings.png"></div>
+                <div class="lowerNav__list__btn"><a href="../belongings/"><img src="../img/common/lower_nav_check.svg" alt="check"></a></div>
+            </li>
+            
+        </ul>
+    </div>
+</section>
+  </main>
+
+      <!-- pc -->
+  <script src="https://www.his-j.com/cmn/headfoot/js/switch_footer_pc.js"></script>
+  <!-- sp -->
+  <script src="https://www.his-j.com/cmn/headfoot/js/switch_footer_sp.js"></script>
+
+  <!-- ファミリー共通 js -->
+  <script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+
+  <!-- object-fit IE対策 -->
+  <script>
+    objectFitImages();
+  </script>
+
+
+
+<!-- SiteCatalyst code version: H.14.Copyright 1997-2007 Omniture, Inc. More info available at http://www.omniture.com -->
+<script type="text/javascript" language="JavaScript" src="https://www.his-j.com/s_code/s_code.js" charset="Shift_JIS"></script>
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on the next lines. */
+s.pageName="OTHER>theme>family> 家族旅行特集 やりたいことから選ぶ"
+s.server=""
+s.channel=""
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+s.prop6=""
+s.prop7=""
+s.prop8=""
+s.prop9=""
+s.prop10=""
+s.prop11=""
+s.prop12=""
+s.prop13=""
+s.prop14=""
+s.prop15=""
+s.prop16=""
+s.prop20=""
+/* Conversion Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.eVar6=""
+s.eVar7=""
+s.eVar8=""
+s.eVar9=""
+s.eVar10=""
+s.eVar11=""
+s.eVar12=""
+s.eVar13=""
+s.eVar14=""
+s.eVar15=""
+s.eVar16=""
+s.eVar23=""
+s.eVar24=""
+s.eVar25=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)
+//--></script>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.14. -->
+
+<!-- Yahoo Tag Manager -->
+<script type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.yjtag.jp/tag.js#site=b3mRptN";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+<iframe src="//b.yjtag.jp/iframe?c=b3mRptN" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+<!-- End Yahoo Tag Manager -->
+  <script src="../js/index.js"></script>
+  <script src="../js/product.js"></script>
+</body>
+
+</html>
